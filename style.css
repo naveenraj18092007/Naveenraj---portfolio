@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#1b0033;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+    width:300px;
+    background:linear-gradient(to bottom,#12001f,#25004d);
+    border-right:2px solid #a855f7;
+    padding:20px;
+
+}
+
+.profile-card{
+
+    text-align:center;
+    border:2px solid #a855f7;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:30px;
+
+}
+
+.profile-img{
+
+    width:180px;
+    height:220px;
+    border-radius:20px;
+    object-fit:cover;
+    border:3px solid violet;
+
+}
+
+.profile-card h2{
+
+    margin-top:15px;
+    font-family:'Orbitron',sans-serif;
+    color:#d8b4fe;
+
+}
+
+/* MENU */
+
+.menu{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,0.05);
+    padding:15px;
+    border-radius:12px;
+    transition:0.4s;
+
+}
+
+.menu a:hover{
+
+    background:#9333ea;
+    transform:translateX(10px);
+
+}
+
+/* MAIN */
+
+.main-content{
+
+    flex:1;
+    padding:20px;
+
+}
+
+/* TOP BAR */
+
+.top-bar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    border:2px solid #9333ea;
+    padding:20px;
+    border-radius:20px;
+
+}
+
+.top-bar h1{
+
+    font-family:'Orbitron',sans-serif;
+    color:silver;
+
+}
+
+/* SEARCH */
+
+.search-box{
+
+    display:flex;
+    align-items:center;
+    background:#22003c;
+    border:1px solid violet;
+    border-radius:30px;
+    overflow:hidden;
+
+}
+
+.search-box input{
+
+    padding:12px;
+    border:none;
+    background:none;
+    color:white;
+    width:250px;
+    outline:none;
+
+}
+
+.search-box button{
+
+    background:violet;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+    font-size:18px;
+
+}
+
+/* CARD */
+
+.card{
+
+    border:2px solid #9333ea;
+    border-radius:25px;
+    padding:40px;
+    margin-bottom:30px;
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(10px);
+
+}
+
+/* HOME */
+
+#home{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+
+}
+
+.home-text h1{
+
+    font-size:70px;
+    color:white;
+    font-family:'Orbitron',sans-serif;
+
+}
+
+.home-text p{
+
+    margin-top:20px;
+    font-size:22px;
+    color:#d8b4fe;
+
+}
+
+.car-image img{
+
+    width:500px;
+    animation:float 3s infinite ease-in-out;
+
+}
+
+/* FLOAT */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* ABOUT */
+
+#about p{
+
+    margin-top:20px;
+    line-height:2;
+    font-size:18px;
+    color:#ddd;
+
+}
+
+/* SKILLS */
+
+.skills-container{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:30px;
+
+}
+
+.skill-box{
+
+    width:180px;
+    padding:20px;
+    text-align:center;
+    border-radius:20px;
+    background:rgba(255,255,255,0.06);
+    transition:0.4s;
+    border:1px solid #9333ea;
+
+}
+
+.skill-box:hover{
+
+    transform:scale(1.08);
+    background:#3b0764;
+
+}
+
+.skill-box img{
+
+    width:80px;
+    height:80px;
+    object-fit:contain;
+
+}
+
+.skill-box p{
+
+    margin-top:15px;
+    font-size:20px;
+
+}
